@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voice Word Recognition Counter</title>
+		<script src="./app.js" defer></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="">
+		<div
+			class="mt-10 flex flex-col gap-3 md:container ml-5 mr-5 md:ml-auto md:mr-auto"
+		>
+			<h1 class="text-2xl font-bold">Voice Recognition Counter</h1>
+			<p>Type a word and say it to increase the counter.</p>
+			<input
+				class="bg-gray-200 md:w-fit p-3 rounded"
+				type="text"
+				id="word"
+				placeholder="Type a word"
+			/>
+			<span class="text-3xl" id="counter">0</span>
+			<button class="bg-green-600 text-white p-3 rounded" id="start">
+				Start Recording
+			</button>
+			<button class="bg-gray-500 text-white p-3 rounded" id="stop">
+				Stop Recording
+			</button>
+			<button class="bg-red-500 text-white p-3 rounded" id="reset">
+				Reset Counter
+			</button>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
